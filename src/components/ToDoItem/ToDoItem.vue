@@ -28,7 +28,7 @@ export default defineComponent({
       v-if="!!data.thumbnail"
       :src="data.thumbnail"
       :alt="data.thumbnail"
-      class="card-img-top"
+      class="card-img-top img-show"
     />
     <div class="card-body d-flex flex-column">
       <h5 class="card-title">{{ data.title }}</h5>
@@ -72,5 +72,10 @@ export default defineComponent({
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+@media (max-width: 820px) {
+  .img-show {
+    height: 200px;
+  }
 }
 </style>
