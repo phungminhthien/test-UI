@@ -1,5 +1,5 @@
-import * as types from "@/store/mutation-types";
-import Task from "@/api/task";
+import * as types from "../mutation-types";
+import Task from "../../api/task";
 
 const state = {
   tasks: [],

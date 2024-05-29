@@ -1,5 +1,5 @@
-import * as types from "@/store/mutation-types";
-import User from "@/api/user";
+import * as types from "../mutation-types";
+import User from "../../api/user";
 
 const state = {
   name: "",
