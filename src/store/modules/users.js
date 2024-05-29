@@ -1,25 +1,24 @@
 import * as types from "@/store/mutation-types";
-import { IUser, IUserStore } from "@/models";
 import User from "@/api/user";
 
-const state: IUserStore = {
+const state = {
   name: "",
 };
 
 const getters = {
-  username: (state: IUserStore) => state.name,
+  username: state => state.name,
 };
 
 const mutations = {
-  [types.SET_USER_NAME](state: IUserStore, data: string) {
+  [types.SET_USER_NAME](state, data) {
     state.name = data;
   },
 };
 
 const actions = {
-  getUserInfo: ({ commit }: any) =>
-    new Promise((resolve) => {
-      User.getUserInfo().then((data: IUser) => {
+  getUserInfo: ({ commit }) =>
+    new Promise(resolve => {
+      User.getUserInfo().then(data => {
         commit(types.SET_USER_NAME, data.name);
         resolve(true);
       });
