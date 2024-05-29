@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "type": "module",
   "author": {
-    "name": "Hung.Pham Tien",
-    "email": "phhung93@gmail.com"
+    "name": "Phung Minh Thien",
+    "email": "thienhv2001@gmail.com"
   },
   "scripts": {
     "dev": "vite",

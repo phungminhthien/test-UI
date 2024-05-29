@@ -5,7 +5,16 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
-    "strict": true
+    "strict": true,
+    "checkJs": true,          // Enable type checking for JavaScript files
+    "allowJs": true,          // Allow JavaScript files to be compiled
+    "noEmit": true            // Prevents output of compile files, useful if just using for type-checking
   },
-  "include": ["vite.config.js"]
+  "include": [
+    "vite.config.js",        // Make sure this path is correct
+    "src/**/*.js"            // Include all JavaScript files in src folder
+  ],
+  "exclude": [
+    "node_modules"           // Commonly excluded to speed up TypeScript operations
+  ]
 }
