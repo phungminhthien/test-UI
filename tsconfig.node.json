@@ -12,7 +12,8 @@
   },
   "include": [
     "vite.config.js",        // Make sure this path is correct
-    "src/**/*.js"            // Include all JavaScript files in src folder
+    "src/**/*.js",
+    "./"            // Include all JavaScript files in src folder
   ],
   "exclude": [
     "node_modules"           // Commonly excluded to speed up TypeScript operations
